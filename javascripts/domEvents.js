@@ -6,19 +6,34 @@ var Translator = (function(oldTranslator) {
 			if (radioList[i].checked === true){
 				var language = radioList[i].id // takes the id from what is checked as true
 						if (language === "german"){
-							translateGerman();
+							oldTranslator.translateGerman();
 						} else if (language === "gaelic"){
-							translateGaelic();
+							oldTranslator.translateGaelic();
 						} else if (language === "italian"){
-							translateItalian();
+							oldTranslator.translateItalian();
 						} else if (language === "latin"){
-							translateLatin();
+							oldTranslator.translateLatin();
 						} else {
 							alert("Select a language");
 						}
 			}
 		} 
 	}
+
+	oldTranslator.translateGerman = function(){
+		var userString = userInputField.value
+		userString = userString.toLowerCase()
+		// console.log(userString);  returned value from text field
+		var userStringArray = userString.split(" ");
+		var userStringOutput = [];
+			for (i=0; i<userStringArray.length; i++){
+				userStringOutput.push(oldTranslator.getGermanWord(userStringArray[i]))
+			}
+			
+			var printedOutput = userStringOutput.join(" ");
+			output.innerHTML = printedOutput;
+	}
+
 	return oldTranslator;	
 })(Translator || {});
 
