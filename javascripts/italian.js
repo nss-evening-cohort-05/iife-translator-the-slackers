@@ -10,4 +10,5 @@ var Translator = (function(oldTranslator){
     oldTranslator.getItalianWord = function(word){
       return italian[word];
     }
+    return oldTranslator;
 })(Translator || {});
