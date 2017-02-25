@@ -4,8 +4,7 @@
 	var radioLatin = document.getElementById("latin");
 
 	var button = document.getElementById("btn");
-	button.addEventListener("click",Translator.determineLanguage)
+	button.addEventListener("click", Translator.determineLanguage)
 
 	var userInputField = document.getElementById("userText");
 	var output = document.getElementById("output");
-

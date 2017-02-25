@@ -1,11 +1,11 @@
 var Translator = (function(oldTranslator){
   var italian = {
-    "Merry":"buon",
-    "Christmas":"Natale",
+    "merry":"buon",
+    "christmas":"Natale",
     "and":"e",
-    "Happy":"Felice",
-    "New":"Anno",
-    "Year":"nuovo"
+    "happy":"Felice",
+    "new":"Anno",
+    "year":"nuovo"
     }
     oldTranslator.getItalianWord = function(word){
       return italian[word];
