@@ -4,6 +4,7 @@ var Translator = (function(oldTranslator){
 		"christmas" : "Shona",
 		"and": "agus",
 		"happy" : "athbhliain",
+		"new" : "soith",
 		"year" : "shona"
 	}
 	oldTranslator.getGaelicWord = function(word) {
